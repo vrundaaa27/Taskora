@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f1f7;
+    color: #4a4458;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 36px;
+    color: #6d597a;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    margin-top: 0;
+    color: #8a7f8d;
+    font-size: 14px;
+}
+
+/* Main container */
+
+.todo-container {
+    width: 400px;
+    margin: 30px auto;
+    background-color: #fffafc;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(109, 89, 122, 0.12);
+}
+
+/* Task input */
+
+#taskInput {
+    padding: 12px;
+    width: 60%;
+    border: 1px solid #d8cce0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #4a4458;
+    outline: none;
+}
+
+#taskInput::placeholder {
+    color: #aaa0ad;
+}
+
+#taskInput:focus {
+    border-color: #b8a0c9;
+}
+
+/* Add Task button */
+
+#addTaskBtn {
+    padding: 12px 15px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #cdb4db;
+    color: #4a4458;
+    font-weight: bold;
+}
+
+/* Cancel button */
+
+#cancelEditBtn {
+    background-color: #f4c2c2;
+}
+
+/* General buttons */
+
+button {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Task list */
+
+#taskList {
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#taskList li {
+    list-style: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    background-color: #f1ecf8;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Task text */
+
+#taskList li span {
+    flex: 1;
+    margin-right: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+/* Completed task */
+
+.completed span {
+    text-decoration: line-through;
+    color: #9a929d;
+}
+
+/* Task buttons */
+
+#taskList li button:first-child {
+    background-color: #d8e2f3;
+}
+
+#taskList li button:last-child {
+    background-color: #f2e3e3;
+}
+
+#taskList li button {
+    padding: 6px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #4a4458;
+    background-color: #f5f5f5 !important;
+}
+
+#taskList li button:last-child {
+    background-color: #f4c2c2;
+}
+
+/* Filters */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.filters button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #d8e2f3;
+    color: #4a4458;
+}
+
+/* Active filter */
+
+.filters button.active {
+    font-weight: bold;
+    border: 2px solid #9f86c0;
+}
+
+/* Task counter */
+
+#taskCount {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #8a7f8d;
+}
+
+/* Clear completed */
+
+#clearCompletedBtn {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #cde7d8;
+    color: #4a4458;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 500px) {
+
+    .todo-container {
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    #taskInput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #addTaskBtn,
+    #cancelEditBtn {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 5px;
+    }
+
+}

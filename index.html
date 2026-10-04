@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskora - To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Taskora✨</h1>
+
+    <p class="tagline">Organize your tasks. Get things done.</p>
+
+    <div class="todo-container">
+
+        <input type="text" id="taskInput" placeholder="Enter a task">
+
+        <button id="addTaskBtn">Add Task</button>
+
+        <button id="cancelEditBtn">Cancel</button>
+
+        <ul id="taskList"></ul>
+
+        <p id="taskCount">0 tasks remaining</p>
+        <div class="filters">
+           <button id="allBtn">All</button>
+           <button id="activeBtn">Active</button>
+           <button id="completedBtn">Completed</button>
+        </div>
+        <button id="clearCompletedBtn">Clear Completed</button> 
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
